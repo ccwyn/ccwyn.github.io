@@ -342,7 +342,25 @@
       
         
           
-            
+            <h2 id="attr-：获取匹配的元素集合中的第一个元素的属性的值-或-设置每一个匹配元素的一个或多个属性。"><a href="#attr-：获取匹配的元素集合中的第一个元素的属性的值-或-设置每一个匹配元素的一个或多个属性。" class="headerlink" title="attr() ：获取匹配的元素集合中的第一个元素的属性的值 或 设置每一个匹配元素的一个或多个属性。"></a>attr() ：获取匹配的元素集合中的第一个元素的属性的值 或 设置每一个匹配元素的一个或多个属性。</h2><ul>
+<li>.attr( attributeName ) .attr( attributeName )</li>
+<li>.attr( attributeName, value ) .attr( attributeName, value )</li>
+<li>.attr( attributes )</li>
+<li>.attr( attributeName, function(index, attr) )<h2 id="prop-：获取匹配的元素集中第一个元素的属性（property）值或设置每一个匹配元素的一个或多个属性"><a href="#prop-：获取匹配的元素集中第一个元素的属性（property）值或设置每一个匹配元素的一个或多个属性" class="headerlink" title=".prop() ：获取匹配的元素集中第一个元素的属性（property）值或设置每一个匹配元素的一个或多个属性"></a>.prop() ：获取匹配的元素集中第一个元素的属性（property）值或设置每一个匹配元素的一个或多个属性</h2></li>
+<li>.prop( propertyName ) .prop( propertyName )</li>
+<li>.prop( propertyName, value ) .prop( propertyName, value )</li>
+<li>.prop( properties )</li>
+<li>.prop( propertyName, function(index, oldPropertyValue) )</li>
+</ul>
+<p><strong>两者的区别就在于 attributeName 和propertyName</strong></p>
+<hr>
+<p><strong>对于HTML元素本身就带有的固有属性，在处理时，使用prop方法</strong>。</p>
+<p>例如：“checked”,“selected”,”href”等等。。。</p>
+<p><strong>对于HTML元素我们自己自定义的DOM属性，在处理时，使用attr方法。</strong></p>
+<p>如果把DOM元素看成是一个普通的Object对象，这个对象在其定义时就具有一些属性（property），比如把select的option当做一个对象：<br><img src="http://upload-images.jianshu.io/upload_images/3817875-2146f53fc433e7e9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="这里写图片描述"></p>
+<hr>
+<p><strong>attribute是一个特性节点，每个DOM元素都有一个对应的attributes属性来存放所有的attribute节点，它是一个类数组的容器。</strong><br><strong>attributes的每个数字索引以名值对(name=”value”)的形式存放了一个attribute节点。而property就是一个属性，是一个以名值对(name=”value”)的形式存放在Object中的属性。</strong></p>
+
           
         
       
